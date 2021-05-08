@@ -1,0 +1,37 @@
+.philosophy-section
+    height: 900px
+    display: flex
+    flex-direction: column
+    background-color: $Accent-peach
+    &__container
+        padding-top: 48px
+        padding-bottom: 48px
+        height: 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        & .button
+            @include button_underline
+            width: fit-content
+            & a
+                color: inherit
+    &__content
+        & .content
+            &-title
+                @include Heading_32px_dark
+                margin: 0
+                margin-bottom: 24px
+            &-text
+                @include Paragraph_18px_dark-grey
+                max-height: 242px
+                margin: 0
+                margin-bottom: 24px
+                overflow: hidden
+
+        &-image
+            height: 50%
+            width: 100%
+            & img
+                height: 100%
+                width: 100%
+                object-fit: cover

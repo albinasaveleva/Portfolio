@@ -22,6 +22,9 @@ $Accent_peach: #FFF3E4
 @mixin Heading_32px_grey 
     @include Heading_32px
     color: $Grey
+@mixin Heading_32px_dark
+    @include Heading_32px
+    color: $Dark
 @mixin Heading_55px
     @include Heading_24px
     font-size: 55px
@@ -93,3 +96,6 @@ $Accent_peach: #FFF3E4
     line-height: 150%
     text-transform: uppercase
     color: $White
+@mixin button_underline
+    @include Paragraph_16px_dark
+    border-bottom: 1px solid #8491A0

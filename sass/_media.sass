@@ -59,7 +59,24 @@
                 width: calc(( 100% - 48px ) / 3 )
                 &:not(:last-child)
                     margin-right: 24px
-
+    /*philosophy-section*/
+    .philosophy-section
+        height: 600px
+        flex-direction: row
+        &__container
+            padding-top: 80px
+            padding-bottom: 80px
+            height: 100%
+            width: 50%
+        &__content
+            &-image
+                height: 100%
+                width: 50%
+            & .content
+                &-title
+                    @include Heading_55px_dark
+                &-text
+                    max-height: 234px
 @media screen and ( min-width: 1440px )
     .container
         padding: 0 72px
@@ -78,6 +95,15 @@
         &__container
             padding-top: 120px
             padding-bottom: 120px
+        /*philosophy-section*/
+    .philosophy-section
+        &__container
+            padding-top: 120px
+            padding-bottom: 120px
+        &__content
+            & .content
+                &-text
+                    max-height: 218px
 @media screen and ( min-width: 1920px )
     .container
         max-width: 1920px
