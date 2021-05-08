@@ -1,0 +1,98 @@
+$White: #FFFFFF
+$Black: #000000
+$Dark_100: #181823
+$Dark_5: rgba(255, 255, 255, 0.5)
+$Purple: #5221E6
+$Grey_light: #8491A0
+$Grey_dark: #5B6876
+$Accent_green: #3CC74E
+$Accent_blue: #609BFF
+$Accent_pink: #E95D90
+@mixin Heading_24px
+    font-weight: bold
+    color: $White
+    font-size: 24px
+    line-height: 150%
+@mixin Heading_24px_green
+    @include Heading_24px
+    color: $Accent_green
+@mixin Heading_24px_blue
+    @include Heading_24px
+    color: $Accent_blue
+@mixin Heading_24px_pink
+    @include Heading_24px
+    color: $Accent_pink
+@mixin Heading_32px
+    @include Heading_24px
+    font-size: 32px
+    line-height: 38px
+@mixin Heading_32px_grey 
+    @include Heading_32px
+    color: $Dark_5
+@mixin Heading_55px
+    @include Heading_24px
+    font-size: 55px
+    line-height: 66px
+@mixin Heading_55px_dark
+    @include Heading_55px
+    color: $Dark_100
+@mixin Heading_56px
+    @include Heading_24px
+    font-size: 56px
+    line-height: 67px
+@mixin Heading_56px_dark
+    @include Heading_56px
+    color: $Dark_100
+@mixin Heading_78px
+    @include Heading_24px
+    font-size: 78px
+    line-height: 94px
+@mixin Heading_78px_grey
+    @include Heading_78px
+    color: $Dark_5
+@mixin Paragraph_16px
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+    color: $White
+@mixin Paragraph_16px_dark
+    @include Paragraph_16px
+    color: $Dark_100
+@mixin Paragraph_16px_grey-light
+    @include Paragraph_16px
+    color: $Grey_light
+@mixin Pargraph_18px
+    @include Paragraph_16px
+    font-size: 18px
+@mixin Pargraph_18px_dark-grey
+    @include Paragraph_18px
+    color: $Grey_dark
+@mixin Pargraph_18px_light-grey
+    @include Paragraph_18px
+    color: $Grey_light
+@mixin Overline_16px
+    font-weight: bold
+    font-size: 16px
+    line-height: 150%
+    text-transform: uppercase
+    color: $Grey_light
+@mixin Label_117px
+    font-weight: normal
+    font-size: 117px
+    line-height: 141px
+@mixin button
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 12px 16px
+    border: 1px solid $Purple
+    background-color: $Purple
+@mixin button_blank
+    @include button
+    background-color: transparent
+@mixin button_18px
+    font-weight: bold
+    font-size: 18px
+    line-height: 150%
+    text-transform: uppercase
+    color: $White
