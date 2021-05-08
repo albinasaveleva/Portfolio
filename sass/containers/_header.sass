@@ -1,0 +1,76 @@
+.header
+    &__container
+        padding-top: 24px
+        padding-bottom: 24px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        height: 24px
+        width: 80px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+    &_nav-wrapper
+.navbar
+    display: none
+.burger-menu
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    padding: 24px 20px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: flex-start
+    width: 100%
+    height: 100%
+    background-color: $Black
+    &_inactive
+        display: none
+    &__button
+        width: 24px
+        height: 24px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+        cursor: pointer
+        &-line
+            height: 3px
+            width: 18px
+            background-color: #C4C4C4
+            &:first-child
+                margin-bottom: 5px
+            &:last-child
+                width: 13px
+        &-exit
+            width: 15px
+            height: 15px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-bottom: 40px
+            transform: translate(-5px, 4px)
+            cursor: pointer
+            & .burger-menu__button-line
+                width: 18px
+                &:first-child
+                    transform: rotate(45deg) translateX(30%)
+                &:last-child
+                    transform: rotate(-45deg) translateX(30%)
+    &__navbar
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: flex-start
+        margin-right: 40px
+        &-item
+            &:not(:last-child)
+                margin-bottom: 20px
+.navbar
+    &-item
+        @include Paragraph_16px

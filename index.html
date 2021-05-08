@@ -15,8 +15,39 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo header__logo"></div>
-      <nav class="nav header__nav"></nav>
+      <div class="container header__container">
+        <div class="logo header__logo">
+          <img
+            class="logo-image"
+            src="assets/icons/logo.svg"
+            alt="Robin Williams"
+          />
+        </div>
+        <div class="nav-wrapper header__nav-wrapper">
+          <nav class="navbar">
+            <a href="#" class="navbar-item">Experience</a>
+            <a href="#" class="navbar-item">Work</a>
+            <a href="#" class="navbar-item">Photography</a>
+            <a href="#" class="navbar-item">Contact</a>
+          </nav>
+          <div class="burger-menu__button" id="burger-menu__button">
+            <div class="burger-menu__button-line"></div>
+            <div class="burger-menu__button-line"></div>
+          </div>
+          <div class="burger-menu burger-menu_inactive" id="burger-menu">
+            <div class="burger-menu__button-exit" id="burger-menu__button-exit">
+              <div class="burger-menu__button-line"></div>
+              <div class="burger-menu__button-line"></div>
+            </div>
+            <nav class="navbar burger-menu__navbar">
+              <a href="#" class="navbar-item burger-menu__navbar-item">Experience</a>
+              <a href="#" class="navbar-item burger-menu__navbar-item">Work</a>
+              <a href="#" class="navbar-item burger-menu__navbar-item">Photography</a>
+              <a href="#" class="navbar-item burger-menu__navbar-item">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <section class="hero-section"></section>
     <section class="experience-section"></section>
@@ -31,5 +62,6 @@
       <div class="logo footer__logo"></div>
       <nav class="nav footer__nav"></nav>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

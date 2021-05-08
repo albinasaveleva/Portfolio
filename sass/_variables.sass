@@ -1,13 +1,15 @@
 $White: #FFFFFF
 $Black: #000000
-$Dark_100: #181823
-$Dark_5: rgba(255, 255, 255, 0.5)
-$Purple: #5221E6
+$Dark: #181823
+$Grey: rgba(255, 255, 255, 0.5)
 $Grey_light: #8491A0
 $Grey_dark: #5B6876
+$Purple: #5221E6
 $Accent_green: #3CC74E
 $Accent_blue: #609BFF
 $Accent_pink: #E95D90
+$Accent_violent: #FBE4FF
+$Accent_peach: #FFF3E4
 @mixin Heading_24px
     font-weight: bold
     color: $White
@@ -28,28 +30,28 @@ $Accent_pink: #E95D90
     line-height: 38px
 @mixin Heading_32px_grey 
     @include Heading_32px
-    color: $Dark_5
+    color: $Grey
 @mixin Heading_55px
     @include Heading_24px
     font-size: 55px
     line-height: 66px
 @mixin Heading_55px_dark
     @include Heading_55px
-    color: $Dark_100
+    color: $Dark
 @mixin Heading_56px
     @include Heading_24px
     font-size: 56px
     line-height: 67px
 @mixin Heading_56px_dark
     @include Heading_56px
-    color: $Dark_100
+    color: $Dark
 @mixin Heading_78px
     @include Heading_24px
     font-size: 78px
     line-height: 94px
 @mixin Heading_78px_grey
     @include Heading_78px
-    color: $Dark_5
+    color: $Grey
 @mixin Paragraph_16px
     font-weight: normal
     font-size: 16px
@@ -57,7 +59,7 @@ $Accent_pink: #E95D90
     color: $White
 @mixin Paragraph_16px_dark
     @include Paragraph_16px
-    color: $Dark_100
+    color: $Dark
 @mixin Paragraph_16px_grey-light
     @include Paragraph_16px
     color: $Grey_light
