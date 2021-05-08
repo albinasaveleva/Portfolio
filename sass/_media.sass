@@ -3,6 +3,7 @@
         padding: 0 40px
     /*header*/
     .header
+        position: relative
         &__container
             padding-top: 0
             padding-bottom: 0
@@ -18,11 +19,49 @@
                 background-color: $Purple
             &:hover
                 background-color: $Purple
-@media screen and ( min-width: 1140px )
+    /*hero-section*/
+    .hero-section
+        display: flex
+        align-items: center
+        &__container
+            flex-direction: row
+            align-items: center
+            flex-wrap: nowrap
+            width: calc( 100% + 40px)
+            padding-top: 78px
+            padding-bottom: 84px
+            margin-left: -40px
+        &__content-image
+            margin-left: 0
+            margin-bottom: 0
+            height: 650px
+            width: 50vw
+        &__content-text
+            width: 53.125vw
+            transform: translateX(-86px)
+            margin-right: -86px
+            z-index: 10
+        & .title
+            @include Heading_56px
+            margin-bottom: 32px
+            & span
+                @include Heading_56px_grey
+
+@media screen and ( min-width: 1440px )
     .container
         padding: 0 72px
+    /*hero-section*/
+    .hero-section   
+        height: 90vh
+        &__container
+            width: calc( 100% + 72px)
+            margin-left: -72px
+        &__content-image
+            height: 80vh
+        &__content-text
+            width: 51.25vw
+            
 @media screen and ( min-width: 1920px )
     .container
         max-width: 1920px
         margin: 0 auto
-    
