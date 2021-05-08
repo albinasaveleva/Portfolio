@@ -46,6 +46,19 @@
             margin-bottom: 32px
             & span
                 @include Heading_56px_grey
+    /*experience-section*/
+    .experience-section
+        &__container
+            padding-top: 80px
+            padding-bottom: 80px
+        & .title
+            @include Heading_55px
+        &__content
+            flex-direction: row
+            &-block
+                width: calc(( 100% - 48px ) / 3 )
+                &:not(:last-child)
+                    margin-right: 24px
 
 @media screen and ( min-width: 1440px )
     .container
@@ -60,7 +73,11 @@
             height: 80vh
         &__content-text
             width: 51.25vw
-            
+    /*experience-section*/
+    .experience-section
+        &__container
+            padding-top: 120px
+            padding-bottom: 120px
 @media screen and ( min-width: 1920px )
     .container
         max-width: 1920px

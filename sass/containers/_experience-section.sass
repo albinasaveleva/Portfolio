@@ -1,0 +1,31 @@
+.experience-section
+    &__container
+        padding-top: 48px
+        padding-bottom: 48px
+        display: flex
+        flex-direction: column
+        & .title
+            @include Heading_32px
+            margin: 0
+            margin-bottom: 40px
+    &__content
+        display: flex
+        flex-direction: column
+        &-block
+            &:not(:last-child)
+                margin-bottom: 40px
+            &:nth-child(1) .content-title span
+                color: $Accent_green
+            &:nth-child(2) .content-title span
+                color: $Accent_blue
+            &:nth-child(3) .content-title span
+                color: $Accent_pink
+                
+            & .content
+                &-label
+                    @include Label_117px
+                &-title
+                    @include Heading_24px
+                    margin-bottom: 16px
+                &-text
+                    @include Paragraph_16px_grey-light
