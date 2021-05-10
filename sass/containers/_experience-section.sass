@@ -2,12 +2,10 @@
     &__container
         padding-top: 48px
         padding-bottom: 48px
-        display: flex
-        flex-direction: column
-        & .title
-            @include Heading_32px
-            margin: 0
-            margin-bottom: 40px
+        &__inner
+            display: flex
+            flex-direction: column
+
     &__content
         display: flex
         flex-direction: column
@@ -28,3 +26,10 @@
                     margin-bottom: 16px
                 &-text
                     @include Paragraph_16px_grey-light
+        &-header
+            display: flex
+            flex-direction: column
+            & .title
+                @include Heading_32px
+                margin: 0
+                margin-bottom: 40px

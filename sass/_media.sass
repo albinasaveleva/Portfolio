@@ -24,12 +24,13 @@
         display: flex
         align-items: center
         &__container
+            padding-top: 78px
+            padding-bottom: 84px
+        &__inner
             flex-direction: row
             align-items: center
             flex-wrap: nowrap
             width: calc( 100% + 40px)
-            padding-top: 78px
-            padding-bottom: 84px
             margin-left: -40px
         &__content-image
             margin-left: 0
@@ -51,57 +52,58 @@
         &__container
             padding-top: 80px
             padding-bottom: 80px
-        & .title
-            @include Heading_55px
         &__content
             flex-direction: row
             &-block
                 width: calc(( 100% - 48px ) / 3 )
                 &:not(:last-child)
                     margin-right: 24px
+            &-header
+                & .title
+                    @include Heading_55px
     /*philosophy-section*/
     .philosophy-section
-        height: 600px
-        flex-direction: row
+        &__inner
+            height: 600px
+            flex-direction: row
         &__container
             padding-top: 80px
             padding-bottom: 80px
             height: 100%
             width: 50%
         &__content
+            & .title
+                @include Heading_55px_dark
+            & .text
+                max-height: 234px
             &-image
                 height: 100%
                 width: 50%
-            & .content
-                &-title
-                    @include Heading_55px_dark
-                &-text
-                    max-height: 234px
     /*skillset-section*/
     .skillset-section
         &__container
-        padding-top: 80px
-        padding-bottom: 80px
-        & .title
-            @include Heading_55px
-            margin: 0 0 24px
-        & .text
-            margin-bottom: 48px
+            padding-top: 80px
+            padding-bottom: 80px
+        &__content-description
+            & .title
+                @include Heading_55px
+                margin: 0 0 24px
+            & .text
+                margin-bottom: 48px
         &__content
             flex-direction: row
             flex-wrap: wrap
             grid-row-gap: 48px
             column-gap: 24px
-            & .content
-                &-block
-                    width: calc(( 100% - 24px ) / 2 )
+        &__content-block
+            width: calc(( 100% - 24px ) / 2 )
 @media screen and ( min-width: 1440px )
     .container
         padding: 0 72px
     /*hero-section*/
-    .hero-section   
+    .hero-section
         height: 90vh
-        &__container
+        &__inner
             width: calc( 100% + 72px)
             margin-left: -72px
         &__content-image
@@ -119,27 +121,27 @@
             padding-top: 120px
             padding-bottom: 120px
         &__content
-            & .content
-                &-text
-                    max-height: 215px
+            & .text
+                max-height: 215px
     /*skillset-section*/
     .skillset-section
-        &__container
+        &__inner
             flex-direction: row
-        & .description
+        &__content-description
             margin-right: 24px
-        & .text
-            margin-bottom: 0
+            & .text
+                margin-bottom: 0
     /*tabs-section*/
     .tabs-section
-        display: flex
-        flex-wrap: nowrap
-        width: 100%
-        overflow: hidden
+        &__inner
+            display: flex
+            flex-wrap: nowrap
+            width: 100%
+            overflow: hidden
         & .tab-item
             width: 340px
             flex-shrink: 0
-            
+
 @media screen and ( min-width: 1920px )
     .container
         max-width: 1920px

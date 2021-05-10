@@ -2,11 +2,12 @@
     &__container
         padding-top: 64px
         padding-bottom: 64px
-        display: flex
-        flex-direction: column
-        & .description
+        &__inner
             display: flex
             flex-direction: column
+    &__content-description
+        display: flex
+        flex-direction: column
         & .title
             @include Heading_32px
             margin: 14px 0 16px
@@ -16,18 +17,19 @@
     &__content
         display: flex
         flex-direction: column
-        & .content
-            &-block
-                display: flex
-                flex-direction: column
-                &:not(:last-child)
-                    margin-bottom: 48px
-            &-image
-                margin-bottom: 24px
-            &-title
-                @include Heading_24px
-                margin: 0
-                margin-bottom: 12px
-            &-text
-                @include Paragraph_16px_grey-light
-                margin: 0
+        &-image
+            height: 32px
+            width: 32px
+            margin-bottom: 24px
+    &__content-block
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+            margin-bottom: 48px
+        & .title
+            @include Heading_24px
+            margin: 0
+            margin-bottom: 12px
+        & .text
+            @include Paragraph_16px_grey-light
+            margin: 0
