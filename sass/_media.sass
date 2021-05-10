@@ -97,6 +97,19 @@
             column-gap: 24px
         &__content-block
             width: calc(( 100% - 24px ) / 2 )
+    /*projects-section*/
+    .projects-section
+        &__container
+            padding-top: 80px
+            padding-bottom: 80px
+        &__content-description
+            & .title
+                @include Heading_55px
+        &__content-block
+            & .content-image
+                height: 620px
+
+
 @media screen and ( min-width: 1440px )
     .container
         padding: 0 72px
@@ -141,6 +154,56 @@
         & .tab-item
             width: 340px
             flex-shrink: 0
+    /*projects-section*/
+    .projects-section
+        &__container
+            padding-top: 120px
+            padding-bottom: 153px
+        &__inner
+            display: grid
+            grid-template-columns: repeat( 2, 1fr)
+            grid-template-rows: repeat ( 2, auto )
+            grid-gap: 24px
+        &__content-description
+            grid-row-start: 1
+            grid-row-end: 2
+            grid-column-start: 1
+            grid-column-end: 2
+            margin: 0 56px 56px 0
+            & .title
+                margin-bottom: 0
+        &__content
+            grid-row-start: 2
+            grid-row-end: 3
+            grid-column-start: 1
+            grid-column-end: 3
+            flex-direction: row
+            flex-wrap: wrap
+            grid-gap: 24px
+        &__content-block
+            width: calc(( 100% - 24px ) / 2 )
+            &:not(:last-child)
+                margin-bottom: 0
+            &:nth-child(even)
+                margin-top: calc( -266px - -24px )
+        &__button
+            grid-row-start: 2
+            grid-row-end: 3
+            grid-column-start: 2
+            grid-column-end: 3
+            width: fit-content
+            display: flex
+            align-items: center
+            align-self: end
+            justify-content: center
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 75px
+            @include button_18px
+            @include button_blank
+            padding: 24px 32px
+            cursor: pointer
+            
 
 @media screen and ( min-width: 1920px )
     .container

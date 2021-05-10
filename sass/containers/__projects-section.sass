@@ -1,0 +1,40 @@
+.projects-section
+    &__container
+        padding-top: 64px
+        padding-bottom: 70px
+    &__inner
+        display: flex
+        flex-direction: column
+    &__content-description  
+        & .title
+            @include Heading_32px
+            margin: 0
+            margin-bottom: 80px
+    &__content
+        display: flex
+        flex-direction: column
+    &__content-block
+        width: 100%
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+            margin-bottom: 48px
+        & .content-image
+            height: 400px
+            width: 100%
+            & img
+                height: 100%
+                width: 100%
+                object-fit: cover
+        & .content-text
+            padding: 40px 32px
+            background-color: $Dark
+            & .title
+                @include Heading_24px
+                margin: 0
+                margin-bottom: 13px
+            & .text
+                @include Paragraph_18px_light-grey
+                margin: 0
+    &__button
+        display: none
