@@ -1,0 +1,21 @@
+.start-section
+    &__container
+        padding-top: 48px
+        padding-bottom: 48px
+    &__inner
+        display: flex
+        flex-direction: column
+    &__content-header
+        margin-bottom: 48px
+        & .title
+            @include Heading_32px
+            margin: 0
+            margin-bottom: 16px
+        & .text
+            @include Paragraph_18px_light-grey
+    &__content
+        & .input-block
+            margin-bottom: 40px
+        & .button
+            @include button
+            @include button_18px

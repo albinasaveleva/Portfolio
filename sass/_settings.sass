@@ -18,3 +18,26 @@ a
     @include Overline_16px
     display: block
     margin-bottom: 8px
+.form
+    display: flex
+    flex-direction: column
+    & label
+        @include Paragraph_16px
+        margin-bottom: 8px
+    & input
+        height: 50px
+        width: 100%
+        background-color: $Dark
+        border: none
+        outline: none
+        padding: 10px
+        color: $White
+    & textarea
+        height: 100px
+        width: 100%
+        background-color: $Dark
+        border: none
+        outline: none
+        padding: 10px
+        color: $White
+        resize: none
