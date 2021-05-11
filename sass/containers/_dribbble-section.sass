@@ -1,0 +1,50 @@
+.dribbble-section
+    &__container
+        padding-top: 64px
+        padding-bottom: 64px
+    &__inner
+        display: flex
+        flex-direction: column
+    &__content
+        display: flex
+        flex-direction: column
+        margin-bottom: 64px
+        & .button
+            @include button_underline_light
+    &__content-header
+        display: flex
+        flex-direction: column
+        margin-bottom: 40px
+        & .title
+            @include Heading_55px
+            margin: 0
+            margin-bottom: 24px
+        & .text
+            @include Paragraph_18px_light-grey
+            margin: 0
+    &__content-image
+        height: 516px
+        width: 100%
+        display: flex
+        flex-direction: column
+        border-radius: 8px
+        overflow: hidden
+        & .content-image-border
+            height: 36px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            padding-left: 16px
+            background-color: $Dark
+        & .content-image-border-point
+            width: 12px
+            height: 12px
+            border-radius: 50%
+            background-color: $Grey_dark
+            &:not(:last-child)
+                margin-right: 6px
+        & img
+            height: calc( 100% - 36px )
+            width: 100%
+            object-fit: cover
