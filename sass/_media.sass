@@ -133,6 +133,21 @@
             padding-bottom: 80px
         &__content
             margin-bottom: 120px
+    /*testimonials-section*/
+    .testimonials-section
+        &__container
+            padding-top: 80px
+            padding-bottom: 80px
+        &__inner
+            display: grid
+            grid-template-columns: repeat( 2, 1fr)
+            grid-auto-flow: column
+            grid-gap: 24px
+        &__content-block:not(:last-child)
+            margin-bottom: 64px
+
+
+                
 
 @media screen and ( min-width: 1440px )
     .container
@@ -245,7 +260,13 @@
             margin: 0 auto
         &__content-image
             height: 676px
-
+    /*testimonials-section*/
+    .testimonials-section
+        &__container
+            padding-top: 120px
+            padding-bottom: 120px
+        &__content-block:not(:last-child)
+            margin-bottom: 120px
 @media screen and ( min-width: 1920px )
     .container
         max-width: 1920px

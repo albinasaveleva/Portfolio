@@ -1,0 +1,55 @@
+.testimonials-section
+    &__container
+        padding-top: 48px
+        padding-bottom: 48px
+    &__inner
+        display: flex
+        flex-direction: column
+    &__content
+        display: flex
+        flex-direction: column
+        &:first-child
+            margin-bottom: 64px
+            & .button
+                @include button_underline_light
+    &__content-header
+        display: flex
+        flex-direction: column
+        margin-bottom: 40px
+        & .title
+            @include Heading_32px
+            margin: 0
+            margin-bottom: 16px
+        & .text
+            @include Paragraph_16px_grey-light
+            margin: 0       
+    &__content-block
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+            margin-bottom: 48px
+        & .content-image
+            height: 360px
+            width: 100%
+            & img
+                height: 100%
+                width: 100%
+                object-fit: cover
+        & .content-text
+            padding: 32px
+            display: flex        
+            flex-direction: column
+            & .text
+                @include Heading_24px
+                margin: 0
+                margin-bottom: 64px
+            & .info
+                display: flex
+                flex-direction: column
+                & .info
+                    &-author
+                        @include Paragraph_18px_light-grey
+                        font-weight: bold
+                        margin-bottom: 4px
+                    &-company
+                        @include Paragraph_18px_light-grey
