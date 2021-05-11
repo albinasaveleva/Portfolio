@@ -174,7 +174,20 @@
             & .title
                 @include Heading_55px
                 margin-bottom: 24px
-                
+    /*footer*/
+    .footer
+        &__container
+            padding-top: 80px
+            padding-bottom: 56px
+        &__content
+            display: grid
+            grid-template-columns: repeat( 2, 1fr )
+            grid-auto-flow: row
+            & .nav-wrapper
+                display: grid
+                grid-template-columns: repeat( 2, 1fr )
+                grid-auto-flow: row
+
 @media screen and ( min-width: 1440px )
     .container
         padding: 0 72px
@@ -308,6 +321,11 @@
         &__container
             padding-top: 120px
             padding-bottom: 120px
+    /*footer*/
+    .footer
+        &__container
+            padding-top: 80px
+            padding-bottom: 80px
 
 @media screen and ( min-width: 1920px )
     .container
