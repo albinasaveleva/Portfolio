@@ -49,11 +49,8 @@
     /*experience-section*/
     .experience-section
         &__content
-            flex-direction: row
-            &-block
-                width: calc(( 100% - 48px ) / 3 )
-                &:not(:last-child)
-                    margin-right: 24px
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 24px
             &-header
                 & .title
                     @include Heading_55px
@@ -170,7 +167,7 @@
             padding-bottom: 0
     /*hero-section*/
     .hero-section
-        height: 90vh
+        height: 90vh           
         &__container
             padding-top: 0
             padding-bottom: 0
@@ -183,7 +180,8 @@
             width: 51.25vw
     /*experience-section*/
     .experience-section
-
+        &__content-header
+            width: 60%
     /*philosophy-section*/
     .philosophy-section
         &__content

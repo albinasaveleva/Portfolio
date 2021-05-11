@@ -1,31 +1,32 @@
 .experience-section
     &__inner
-        display: flex
-        flex-direction: column
+        display: grid
+        grid-template-columns: 1fr
+        grid-auto-flow: row
+        grid-gap: 40px
     &__content
+        display: grid
+        grid-template-columns: 1fr
+        grid-auto-flow: row
+        grid-gap: 40px
+        &-block
+            &:nth-child(1) .title span
+                color: $Accent_green
+            &:nth-child(2) .title span
+                color: $Accent_blue
+            &:nth-child(3) .title span
+                color: $Accent_pink
+            & .label
+                @include Label_117px
+            & .title
+                @include Heading_24px
+                margin: 0
+                margin-bottom: 16px
+            & .text
+                @include Paragraph_16px_grey-light
+    &__content-header
         display: flex
         flex-direction: column
-        &-block
-            &:not(:last-child)
-                margin-bottom: 40px
-            &:nth-child(1) .content-title span
-                color: $Accent_green
-            &:nth-child(2) .content-title span
-                color: $Accent_blue
-            &:nth-child(3) .content-title span
-                color: $Accent_pink
-            & .content
-                &-label
-                    @include Label_117px
-                &-title
-                    @include Heading_24px
-                    margin-bottom: 16px
-                &-text
-                    @include Paragraph_16px_grey-light
-        &-header
-            display: flex
-            flex-direction: column
-            & .title
-                @include Heading_32px
-                margin: 0
-                margin-bottom: 40px
+        & .title
+            @include Heading_32px
+            margin: 0
