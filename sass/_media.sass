@@ -1,6 +1,6 @@
 @media screen and ( min-width: 768px )
     .container
-        padding: 0 40px
+        padding: 80px 40px
     /*header*/
     .header
         position: relative
@@ -24,7 +24,6 @@
         display: flex
         align-items: center
         &__container
-            padding-top: 78px
             padding-bottom: 84px
         &__inner
             flex-direction: row
@@ -49,9 +48,6 @@
                 @include Heading_56px_grey
     /*experience-section*/
     .experience-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__content
             flex-direction: row
             &-block
@@ -67,8 +63,6 @@
             height: 600px
             flex-direction: row
         &__container
-            padding-top: 80px
-            padding-bottom: 80px
             height: 100%
             width: 50%
         &__content
@@ -81,9 +75,6 @@
                 width: 50%
     /*skillset-section*/
     .skillset-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__content-description
             & .title
                 @include Heading_55px
@@ -99,9 +90,6 @@
             width: calc(( 100% - 24px ) / 2 )
     /*projects-section*/
     .projects-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__content-description
             & .title
                 @include Heading_55px
@@ -113,9 +101,6 @@
         &__inner
             height: 600px
             flex-direction: row
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
             height: 100%
             width: 50%
         &__content
@@ -128,16 +113,10 @@
                 width: 50%
     /*dribbble-section*/
     .dribbble-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__content
             margin-bottom: 120px
     /*testimonials-section*/
     .testimonials-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__inner
             display: grid
             grid-template-columns: repeat( 2, 1fr)
@@ -147,9 +126,6 @@
             margin-bottom: 64px
     /*photography-section*/
     .photography-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__content-header
             & .title
                 @include Heading_55px
@@ -162,9 +138,6 @@
                 grid-template-columns: repeat( 2, 1fr )
     /*start-section*/
     .start-section
-        &__container
-            padding-top: 80px
-            padding-bottom: 80px
         &__inner
             display: grid
             grid-template-columns: repeat(2, 1fr)
@@ -177,7 +150,6 @@
     /*footer*/
     .footer
         &__container
-            padding-top: 80px
             padding-bottom: 56px
         &__content
             display: grid
@@ -190,10 +162,18 @@
 
 @media screen and ( min-width: 1440px )
     .container
-        padding: 0 72px
+        padding: 120px 72px
+    /*header*/
+    .header
+        &__container
+            padding-top: 0
+            padding-bottom: 0
     /*hero-section*/
     .hero-section
         height: 90vh
+        &__container
+            padding-top: 0
+            padding-bottom: 0
         &__inner
             width: calc( 100% + 72px)
             margin-left: -72px
@@ -203,14 +183,9 @@
             width: 51.25vw
     /*experience-section*/
     .experience-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
+
     /*philosophy-section*/
     .philosophy-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
         &__content
             & .text
                 max-height: 215px
@@ -235,7 +210,6 @@
     /*projects-section*/
     .projects-section
         &__container
-            padding-top: 120px
             padding-bottom: 153px
         &__inner
             display: grid
@@ -283,17 +257,11 @@
             cursor: pointer
     /*instagram-section*/
     .instagram-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
         &__content
             & .text
                 max-height: 215px
     /*dribbble-section*/
     .dribbble-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
         &__inner
             max-width: 1076px
             margin: 0 auto
@@ -301,16 +269,10 @@
             height: 676px
     /*testimonials-section*/
     .testimonials-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
         &__content-block:not(:last-child)
             margin-bottom: 120px
     /*photography-section*/
     .photography-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
         &__content-header
             margin-bottom: 64px
         &__content
@@ -318,9 +280,7 @@
                 grid-template-columns: repeat( 4, 1fr )
     /*start-section*/
     .start-section
-        &__container
-            padding-top: 120px
-            padding-bottom: 120px
+
     /*footer*/
     .footer
         &__container
