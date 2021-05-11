@@ -81,7 +81,7 @@
             grid-gap: 24px
     /*projects-section*/
     .projects-section
-        &__content-description
+        &__content-header
             & .title
                 @include Heading_55px
         &__content-block
@@ -161,7 +161,7 @@
             padding-bottom: 0
     /*hero-section*/
     .hero-section
-        height: 90vh           
+        height: 90vh
         &__container
             padding-top: 0
             padding-bottom: 0
@@ -205,7 +205,7 @@
             grid-template-columns: repeat( 2, 1fr)
             grid-template-rows: repeat ( 2, auto )
             grid-gap: 24px
-        &__content-description
+        &__content-header
             grid-row-start: 1
             grid-row-end: 2
             grid-column-start: 1
@@ -218,13 +218,8 @@
             grid-row-end: 3
             grid-column-start: 1
             grid-column-end: 3
-            flex-direction: row
-            flex-wrap: wrap
-            grid-gap: 24px
+            grid-template-columns: repeat(2, 1fr )
         &__content-block
-            width: calc(( 100% - 24px ) / 2 )
-            &:not(:last-child)
-                margin-bottom: 0
             &:nth-child(even)
                 margin-top: calc( -266px - -24px )
         &__button
@@ -283,5 +278,3 @@
     .philosophy-section
         max-width: 1920px
         margin: 0 auto
-
-
