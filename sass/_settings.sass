@@ -14,6 +14,10 @@ a
     &-image
         width: inherit
         height: inherit
+    &:hover
+        @include hover
+    &:focus
+        @include hover
 .tag
     @include Overline_16px
     display: block
@@ -22,7 +26,6 @@ a
     display: flex
     flex-direction: column
     & label
-        display: block
         @include Paragraph_16px
         margin-bottom: 8px
     & input
@@ -42,3 +45,8 @@ a
         padding: 10px
         color: $White
         resize: none
+.button
+    &:hover
+        @include hover
+    &:focus
+        @include hover
