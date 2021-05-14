@@ -2,6 +2,7 @@
     box-sizing: border-box
     font-family: Sen, sans-serif
     font-style: normal
+    scroll-behavior: smooth
 body
     background-color: $Black
     position: relative
@@ -51,3 +52,16 @@ a
         @include hover
     &:focus
         @include hover
+.up-button  
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    bottom: 25px
+    right: 25px
+    height: 50px
+    width: 50px
+    background-color: rgba(255, 255, 255, 0.3)
+    transform: rotate(-90deg)
+    @include Paragraph_16px
+    z-index: 500
