@@ -244,7 +244,8 @@ a {
 .hero-section__content-image > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-section__content-text .title {
@@ -361,6 +362,8 @@ a {
 }
 
 .philosophy-section__content .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: normal;
   font-size: 16px;
@@ -378,7 +381,8 @@ a {
 .philosophy-section__content-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .philosophy-section__content-header {
@@ -547,7 +551,8 @@ a {
 .projects-section__content-block .content-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects-section__content-block .content-text {
@@ -597,6 +602,8 @@ a {
 }
 
 .instagram-section__content .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: normal;
   font-size: 16px;
@@ -626,7 +633,8 @@ a {
 .instagram-section__content-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .instagram-section__content-header {
@@ -662,6 +670,8 @@ a {
 }
 
 .dribbble-section__content .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: normal;
   font-size: 16px;
@@ -730,7 +740,8 @@ a {
 .dribbble-section__content-image img {
   height: calc( 100% - 36px);
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimonials-section__inner {
@@ -748,6 +759,8 @@ a {
 }
 
 .testimonials-section__content:first-child .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: normal;
   font-size: 16px;
@@ -796,7 +809,8 @@ a {
 .testimonials-section__content-block .content-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimonials-section__content-block .content-text {
@@ -931,7 +945,8 @@ a {
 .photography-section__content .content-wrapper .tab-image {
   height: 420px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .start-section__inner {
@@ -1457,6 +1472,8 @@ a {
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -1536,4 +1553,3 @@ a {
     padding: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
