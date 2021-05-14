@@ -79,6 +79,10 @@
         &__content
             grid-template-columns: repeat( 2, 1fr )
             grid-gap: 24px
+    /*cells-section*/
+    .cells-section
+        &__container
+            padding: 0
     /*projects-section*/
     .projects-section
         &__content-header
@@ -190,16 +194,14 @@
         &__inner
             grid-template-columns: 1fr 2fr
             grid-gap: 24px
-    /*tabs-section*/
-    .tabs-section
-        &__inner
-            display: flex
-            flex-wrap: nowrap
-            width: 100%
-            overflow: hidden
-        & .tab-item
-            width: 340px
-            flex-shrink: 0
+    /*cells-section*/
+    .cells-section
+        &__container
+            padding: 0
+        & .cells
+            display: none
+        & .cells-carousel
+            display: block
     /*projects-section*/
     .projects-section
         &__container
@@ -290,3 +292,7 @@
     .instagram-section
         max-width: 1920px
         margin: 0 auto
+    .cells-section
+        &__container
+            padding: 0
+

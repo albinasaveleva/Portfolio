@@ -1,11 +1,16 @@
-.tabs-section
+.cells-section
+    &__container
+        padding: 0
     &__inner
+    & .cells 
         display: flex
         flex-wrap: wrap
-    & .tab-item
+    & .cell-item
         display: flex
         align-items: center
         justify-content: center
         height: 140px
         width: 50%
         border: 1px solid $Dark
+    & .cells-carousel
+        display: none

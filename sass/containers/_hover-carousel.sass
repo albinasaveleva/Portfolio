@@ -1,0 +1,77 @@
+.carousel
+    display: block
+    -webkit-transform: translateZ(0)
+    width: 100%
+    height: 140px
+    font-size: 0
+    -webkit-overflow-scrolling: touch
+
+.touch .carousel
+    overflow: auto
+
+.carousel > a
+    position: absolute
+    margin: 0
+    top: 0
+    bottom: 0
+    color: #CCC
+    font-size: 1.5em
+    transition: 0.1s
+
+.carousel > a:hover
+    color: #FFF
+
+.carousel > a.prev
+    left: -20px
+
+.carousel > a.next
+    right: -20px
+
+.carousel > .slide
+    pointer-events: none
+    position: absolute
+    z-index: 4
+    bottom: 0
+    left: 0
+    background: #2ab1ce
+    height: 4px
+    border-radius: 10px
+    opacity: 0
+    transition: opacity 0.2s, bottom 0.2s
+
+.carousel:hover > .slide
+    opacity: 1
+    bottom: -10px
+
+.carousel > .wrap
+    overflow: hidden
+
+.carousel > .wrap > ul
+    padding: 0
+    list-style: none
+    white-space: nowrap
+    height: 140px
+
+.carousel > .wrap > ul > li
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+    width: 340px
+    position: relative
+    overflow: hidden
+    transition: 0.25s ease-out
+    border: 1px solid $Dark
+
+.carousel > .wrap > ul > li:first-child
+    margin: 0
+
+.carousel > .wrap > ul > li > img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: block
+    vertical-align: bottom
+    z-index: 1
+    transition: 1s ease
